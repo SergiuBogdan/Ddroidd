@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ddroidd_ Frontend Winter Internship 2022</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="div1">
+        <nav>
+          <img class="header" src="/assets/img/ddroidd_logo.svg" alt="Logo Ddroidd">
+      </div>
+      <div class="div2">
+        <h1 class="text">Winter Internship</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="form-content">
+        <div class="app-form">Application Form</div>
+
+        <div class="first-name">
+          <div class="input-box">
+            <span>First Name:</span> <span style="color:red">*</span>
+            <input type="text" placeholder="First Name" required>
+          </div>
+
+          <div class="input-box">
+            <span>Last Name:</span> <span style="color:red">*</span>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="adress-form">Address</div>
+      <div class="input-box-settings">
+        <div class="address-line1">
+          <div class="input-box2">
+            <span>Adress Line 1:</span> <span style="color:red">*</span>
+            <input type="text" placeholder="Street name & number" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-box-settings2">
+        <div class="address-line2">
+          <div class="input-box2">
+            <span>Adress Line 2:</span>
+            <input type="text" placeholder="Suite, apartment" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="city">
+        <div class="input-box-city">
+          <span>City:</span> <span style="color:red">*</span>
+          <input type="text" placeholder="City" required>
+        </div>
+
+        <div class="input-box-city2">
+          <span>State:</span> <span style="color:red">*</span>
+          <div class="select">
+            <select name="format">
+              <option selected disabled>State</option>
+              <option value="txt">Alba</option>
+              <option value="txt">Arad</option>
+              <option value="txt">Arges</option>
+              <option value="txt">Bacau</option>
+              <option value="txt">Bihor</option>
+              <option value="txt">Bistrita-Nasaud</option>
+              <option value="txt">Botosani</option>
+              <option value="txt">Brasov</option>
+              <option value="txt">Braila</option>
+              <option value="txt">Bucuresti</option>
+              <option value="txt">Buzau</option>
+              <option value="txt">Caras-Severin</option>
+              <option value="txt">Cluj</option>
+              <option value="txt">Constanta</option>
+              <option value="txt">Covasna</option>
+              <option value="txt">Dambovita</option>
+              <option value="txt">Dolj</option>
+              <option value="txt">Galati</option>
+              <option value="txt">Giurgiu</option>
+              <option value="txt">Gorj</option>
+              <option value="txt">Harghita</option>
+              <option value="txt">Hunedoara</option>
+              <option value="txt">Ialomita</option>
+              <option value="txt">Iasi</option>
+              <option value="txt">Ilfov</option>
+              <option value="txt">Maramures</option>
+              <option value="txt">Mehedinti</option>
+              <option value="txt">Mures</option>
+              <option value="txt">Neamt</option>
+              <option value="txt">Olt</option>
+              <option value="txt">Prahova</option>
+              <option value="txt">Satu Mare</option>
+              <option value="txt">Salaj</option>
+              <option value="txt">Sibiu</option>
+              <option value="txt">Suceava</option>
+              <option value="txt">Teleorman</option>
+              <option value="txt">Timis</option>
+              <option value="txt">Tulcea</option>
+              <option value="txt">Vaslui</option>
+              <option value="txt">Valcea</option>
+              <option value="txt">Vrancea</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-box-city3">
+          <span>Zip Code:</span> <span style="color:red">*</span>
+          <input type="text" placeholder="Zip Code" required>
+        </div>
+      </div>
+
+      <div class="contact-info">Contact information</div>
+      <div class="phone-number">
+        <div class="input-box">
+          <span>Phone:</span> <span style="color:red">*</span>
+          <input type="tel" placeholder="555-5555" required minlength="6" maxlength="10">
+        </div>
+
+        <div class="input-box">
+          <span>Email address:</span> <span style="color:red">*</span>
+          <input type="email" placeholder="john@doe.com" required>
+        </div>
+
+
+        <form action="?" method="POST">
+          <br>
+          <div class="g-recaptcha" data-sitekey="6Lcmv8MdAAAAABs1w01ezpdFVZuar7T3w0RGh5PI" ,
+            data-callback="recaptcha_callback">
+          </div>
+          <div class="joinus-3">
+            <input id="register-btn" type="submit" value="Submit" class="btn-3" disabled>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="./bundle.js"></script>
+  <script>
+    function recaptcha_callback() {
+      var submitBtn = document.querySelector('#register-btn');
+
+      submitBtn.removeAttribute('disabled');
+      submitBtn.style.cursor = 'pointer';
+    }
+  </script>
+</body>
+<footer class="footer">
+  <div class="dark-side">
+    <p>Come to the dark side... we have 🍪</p>
+  </div>
+</footer>
+
+</html>
