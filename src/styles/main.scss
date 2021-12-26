@@ -268,7 +268,6 @@ nav{
 }
 
 .address-line1{
-  padding-bottom: 15px;
   margin: 20px 0 12px 0;
   color: #003C55;
   font-family: 'Open Sans', sans-serif;
@@ -327,6 +326,7 @@ nav{
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
   margin-left: 279px;
+  font-weight: bold;
 }
 
 .input-box-city input{
@@ -431,6 +431,7 @@ select {
   margin: 20px 0 12px 0;
   color: #003C55;
   font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   font-size: 11px;
   margin-top: 65px;
   margin-left: 279px;
